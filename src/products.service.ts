@@ -11,5 +11,5 @@ export class ProductsService {
 
   findAll(): Promise<Product[]> {
     return Promise.resolve(this.products);
-  }
+  } 
 }
