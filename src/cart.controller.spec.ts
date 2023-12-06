@@ -31,7 +31,7 @@ describe('CartController', () => {
     it('Should render a cart amount', async () => {
       jest.spyOn(cartService, 'cartAmount').mockReturnValue(response);
       await cartController.cartAmount(products);
-      expect(cartService.cartAmount).toHaveBeenLastCalledWith();
+      expect(cartService.cartAmount).toHaveBeenLastCalledWith(products);
     });
   });
 });
